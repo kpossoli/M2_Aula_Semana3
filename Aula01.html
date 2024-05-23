@@ -1,0 +1,29 @@
+<!--
+Imprima em um document.write() o seu nome e sobrenome um ao
+lado do outro, idade e onde mora.
+Capture com o window.prompt() todas essas informações e imprima
+em um document.write().
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações do Usuário</title>
+</head>
+<body>
+    <script>
+        // Capturando as informações do usuário
+        var nome = window.prompt("Digite seu nome:");
+        var sobrenome = window.prompt("Digite seu sobrenome:");
+        var idade = window.prompt("Digite sua idade:");
+        var localidade = window.prompt("Digite onde você mora:");
+
+        // Exibindo as informações capturadas
+        document.write("Nome: " + nome + " " + sobrenome + "<br>");
+        document.write("Idade: " + idade + "<br>");
+        document.write("Localidade: " + localidade);
+    </script>
+</body>
+</html>
